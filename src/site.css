@@ -1,0 +1,27 @@
+nav{
+  background: gray;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+main{
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+footer{
+  background: pink;
+}
+
+h1,h2,h3,h4{
+ font-family: 'Roboto Slab', serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
