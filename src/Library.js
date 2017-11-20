@@ -4,23 +4,27 @@ import criteria from './data/criteria.js';
 
 
 //var data = JSON.parse(criteria);
+var criteriaGrades = Array[6,7,8,9,10,11,12,"higher education"]
+
 
 class Overlay extends React.Component{
 
-  renderStandardButton(i){
+  renderStandardButton(){
     return(
-      <button>{criteria.standards[i]}</button>
+      // for(let i=0; i< criteriaGrades.length;++)
+       <option className="col-md-4 col-sm-6">Words</option>
+    
     );
   }
 
   render(){
-      console.log(criteria);
+      console.log("check");
 
     return(
       <div className="overlay">
         <p>This is a test</p>
-        <li><button>{this.renderStandardButton[1]}</button></li>
-        <button>Add a standard </button>
+        <li>{this.renderStandardButton()}</li>
+        <button onClick={()=> alert('Do something!')}>Add a standard </button>
       </div>
       );
   }

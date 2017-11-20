@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import ReactDOM from 'react-dom';
 import {
   Route,
@@ -9,6 +8,7 @@ import {
 import Home from "./Home";
 import Library from "./Library";
 import Assignment from "./Assignment";
+
  
 class Main extends Component {
   render() {
@@ -18,7 +18,7 @@ class Main extends Component {
           <h1>Simple SPA</h1>
           <nav>
             <ul className="header">
-              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink to="/library">Library</NavLink></li>
               <li><NavLink to="/assignment">Assignment</NavLink></li>
             </ul>
@@ -33,6 +33,7 @@ class Main extends Component {
         </div>
 
       </HashRouter>
+
     );
   }
 }

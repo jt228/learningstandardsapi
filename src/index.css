@@ -121,3 +121,8 @@ ul.header li a {
   z-index: 1;
   position: fixed;
 }
+
+option {
+  background-color: #000;
+  color: #fff;
+}
