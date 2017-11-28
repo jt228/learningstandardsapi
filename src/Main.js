@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import ReactDOM from 'react-dom';
+import React from "react";
 import {
   Route,
   NavLink,
@@ -9,8 +8,9 @@ import Home from "./Home";
 import Library from "./Library";
 import Assignment from "./Assignment";
 
- 
-class Main extends Component {
+
+class Main extends React.Component {
+
   render() {
     return (
       <HashRouter>
@@ -23,11 +23,11 @@ class Main extends Component {
               <li><NavLink to="/assignment">Assignment</NavLink></li>
             </ul>
           </nav>
-          
+
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/library" component={Library}/>
-            <Route path="/assignment" component={Assignment}/>            
+            <Route path="/assignment" component={Assignment}/>
           </div>
 
         </div>
@@ -37,5 +37,5 @@ class Main extends Component {
     );
   }
 }
- 
+
 export default Main;

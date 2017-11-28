@@ -1,0 +1,6 @@
+[
+    {"grade":[1,2],"genre":"analysis","title":"First title","sources":0,"preview":"Great teaser for prompt 1"},
+    {"grade":2,"genre":"narrative","title":"Second title","sources":1,"preview":"Great teaser for prompt 2"},
+    {"grade":3,"genre":"argumentative","title":"Third title","sources":3,"preview":"Great teaser for prompt 3"},
+    {"grade":4,"genre":"informative","title":"Fourth title","sources":4,"preview":"Great teaser for prompt 4"}
+]

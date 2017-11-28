@@ -1,5 +1,5 @@
-import React, { Component } from "react";
- 
+import React from "react";
+
 class Assignment extends React.Component {
   render() {
     return (
@@ -12,5 +12,5 @@ class Assignment extends React.Component {
     );
   }
 }
- 
-export default Assignment 
+
+export default Assignment

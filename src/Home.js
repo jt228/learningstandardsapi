@@ -1,5 +1,5 @@
-import React, { Component } from "react";
- 
+import React from "react";
+
 class Cat extends React.Component{
   render(){
     return(
@@ -13,7 +13,7 @@ class Cat extends React.Component{
 class Home extends React.Component {
   render() {
     return (
-      
+
       <div>
       <Cat/>
         <h2>HELLO</h2>
@@ -23,11 +23,11 @@ class Home extends React.Component {
         metus nec massa. Maecenas hendrerit laoreet augue
         nec molestie. Cum sociis natoque penatibus et magnis
         dis parturient montes, nascetur ridiculus mus.</p>
- 
+
         <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
       </div>
     );
   }
 }
- 
+
 export default Home
