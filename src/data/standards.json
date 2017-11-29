@@ -1,0 +1,383 @@
+{
+    "Common Core": {
+        "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "CCSS.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "CCSS.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+      "Alaska": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "AL.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "AL.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Arizona": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "AZ.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "AZ.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Florida": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "FL.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "FL.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+     "Indiana": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "IN.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "IN.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Iowa": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "IO.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "IO..ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Nebraska": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "NB.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "NB.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "New Jersey": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "NJ.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "NJ.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Oklahoma": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "OK.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "OK.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Pennsylvania": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "PACC.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "PACC.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "South Carolina": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "SC.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "SC.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Tennessee": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "TN.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "TN.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Texas": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "TX.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "TX..ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    },
+    "Virginia": {
+       "6":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "VA.ELA-LITERACY.W.6.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ],
+
+        "7":
+            [
+                {
+                "analysis": false,
+                "argumentative": false,
+                "historical analysis": false,
+                "informative": true,
+                "narrative": false,
+                "name": "VA.ELA-LITERACY.W.7.2",
+                "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+                }
+            ]
+    }
+
+}
+
+

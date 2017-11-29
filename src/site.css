@@ -1,17 +1,86 @@
+
+body {
+  background-color: #EEEFF3;
+  padding: 0px;
+  margin-top: 100px;
+}
+
+
 nav{
-  background: gray;
   height: 50px;
   margin: 0px;
   padding: 0px;
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index:3;
+}
+
+nav ul.header{
+  background: #fff;
+}
+
+nav ul.header li a{
+  color: black;
+  font-weight: 400;
+}
+
+.sub-nav{
+  top: 60px;
+  z-index:2;
+}
+
+li a.active{
+  background: red;
+  font-weight: 500;
 }
 
 main{
-  min-height: 100vh;
   margin-top: 50px;
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 150px;
 }
+
+
+
+
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    content{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+  content{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: #EEEFF3;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    margin-left: 16.66%;
+    margin-right: 16.66%;
+  }
+
+}
+
 
 footer{
   background: pink;
@@ -23,10 +92,105 @@ h1,h2,h3,h4{
 
 p{
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 16px;
+  font-weight: 300px;
 }
 
 .black {
   background-color: #000;
   color: #fff;
+}
+
+.btn{
+  border-radius: 4px;
+  min-width: 140px;
+  margin-right: 12px;
+  line-height: 52px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 15px;
+  border: none;
+}
+
+.btn .btn-primary{
+  color: white;
+  background-color: #1e7bbb;
+}
+
+.tile{
+  width: 240px;
+  height: 244px;
+  border-radius: 4px;
+  position: relative;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 26px 22px 22px 22px;
+  margin-right: 18px;
+  margin-top: 16px;
+  float: left;
+}
+
+.library-title{
+  color: #1e7bbb;
+  padding-bottom: 30px;
+}
+
+.library-container{
+  text-align: center;
+}
+
+.library-count{
+  font-size: 28px;
+  color: #1e7bbb;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d4d6d9;
+  margin-top: -4px;
+  padding-top: 30px;
+}
+
+.instructions{
+  padding-top: 15px;
+}
+
+.assignment-div{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.assignment-info{
+  background: #fff;
+  margin: 5px;
+  padding: 30px;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.assignment-div-header{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.assignment-div-title{
+  text-align: center;
+}
+
+.assignment-title{
+  color:#1e7bbb;
+  padding-bottom: 20px;
+}
+
+.source-title{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 import criteria from './data/criteria.json';
 
@@ -9,6 +10,39 @@ function StandardButton(props){
       <div onClick={() => props.onClick(props.value)}>{props.value}</div>
     );
 }
+
+
+class LibraryHeader extends React.Component{
+  render(){
+    return (
+      <div>
+        <div className="library-container">
+          <h2 className="library-title">Revision Assistant Library</h2>
+          <p className="instructions">Click on a prompt to view the full text and to add it to your assignment.</p>
+          <select name="skill">
+            <option value="">All Skill Levels</option>
+            <option value="6">Grade 6</option>
+            <option value="7">Grade 7</option>
+            <option value="8">Grade 8</option>
+            <option value="9">Grade 9-10</option>
+            <option value="11">Grade 11-12</option>
+            <option value="AP">AP</option>
+            <option value="HE">Higher Education</option>
+          </select>
+          <select name="genre">
+            <option value="">All Genres</option>
+            <option value="analysis">Analysis</option>
+            <option value="argumentative">Argumentative</option>
+            <option value="historical">Historical Analysis</option>
+            <option value="informative">Informative</option>
+            <option value="narrative">Narrative</option>
+          </select>
+        </div>
+      </div>
+    );
+  }
+}
+
 
 
 class ArrayList extends React.Component{
@@ -24,6 +58,7 @@ class ArrayList extends React.Component{
 
    render(){
     const arrayStandards = Object.keys(this.props.selectedStandards);
+
     const arrayItems = arrayStandards.map((arrayValue, index) =>
         <div key={"div-"+arrayValue.toString()}>
           {this.renderStandardButton(arrayValue, index)}
@@ -36,27 +71,30 @@ class ArrayList extends React.Component{
 }
 
 // Resource used for this: https://plnkr.co/edit/kFKBi8qUAC02eeHOYUB3?p=preview and https://stackoverflow.com/questions/41374572/how-to-render-an-array-of-objects-in-react
-class PromptList extends React.Component{
+function PromptList(props){
+    const data = criteria;
 
-    render() {
-      const data = criteria;
-      return (
-        <div>
-          {data.map(function(d, idx){
-             return (
-              <div key={idx}>
-                <h3>{d.title}</h3>
-                <div>{d.preview}</div>
-                <span> {d.grade}</span>
-                <span>{d.genre}|{d.sources}</span>
-              </div>)
-           })}
+    return (
+      <div >
+        <div className="library-count">
+          <h4>
+            Assignments ({data.length})
+          </h4>
         </div>
-      );
-    }
+        {data.map(function(d, idx){
+           return (
+            <Link to='/assignment' key={idx} >
+              <div className="tile" key={idx} onClick={()=> props.onClick(idx)}>
+                <h4>{d.title}</h4>
+                <div>{d.preview}</div>
+                <span>{d.genre}|{d.sources}</span>
+              </div>
+            </Link>
+            );
+         })}
+      </div>
+    );
 }
-
-
 
 class Overlay extends React.Component{
   constructor(props){
@@ -81,7 +119,6 @@ class Overlay extends React.Component{
   }
 
 class Library extends React.Component {
-
   constructor(props){
     super(props);
     this.state = {};
@@ -107,10 +144,7 @@ class Library extends React.Component {
         "Virginia": false
       }
     };
-
-
   }
-
   changeButton(value) {
     const standardsClicked = Object.assign({}, this.state.selectedStandards);
     standardsClicked[value] = !standardsClicked[value];
@@ -118,9 +152,14 @@ class Library extends React.Component {
     this.setState({selectedStandards: standardsClicked});
     // Update state in localStorage
     localStorage.setItem('selectedStandards', JSON.stringify(standardsClicked));
-    console.log(localStorage.selectedStandards)
+    //console.log(localStorage.selectedStandards)
     //console.log(this.state.selectedStandards);
-    alert(standardsClicked[value])
+    //alert(standardsClicked[value])
+  }
+  handleClick(i){
+    localStorage.setItem('currentAssignment',i);
+    //console.log(localStorage.getItem('currentAssignment'));
+    //alert("hi");
   }
 
   render() {
@@ -130,21 +169,16 @@ class Library extends React.Component {
           selectedStandards={this.state.selectedStandards}
           changeButton={(value) => this.changeButton(value)}
         />
-        <h2>Library</h2>
         <h2>{this.state.selectedJuris}</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
-        <PromptList />
-        <ol>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
-          <li><a href="/contact">Contact</a></li>
-        </ol>
+        <LibraryHeader/>
+        <PromptList onClick={(i) => this.handleClick(i)}/>
       </div>
     );
   }
 }
+
+
+
+
 
 export default Library

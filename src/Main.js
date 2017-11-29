@@ -7,6 +7,7 @@ import {
 import Home from "./Home";
 import Library from "./Library";
 import Assignment from "./Assignment";
+import Standards from "./Standards";
 
 
 class Main extends React.Component {
@@ -15,21 +16,23 @@ class Main extends React.Component {
     return (
       <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
-          <nav>
-            <ul className="header">
+
+          <nav className="navbar-fixed-top">
+            <div></div>
+            <ul className="header ">
               <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink to="/library">Library</NavLink></li>
               <li><NavLink to="/assignment">Assignment</NavLink></li>
+              <li><NavLink to="/standards">Standards</NavLink></li>
             </ul>
           </nav>
 
-          <div className="content">
+          <div className="content col-md-8 col-sm-12 col-xs-12">
             <Route exact path="/" component={Home}/>
             <Route path="/library" component={Library}/>
             <Route path="/assignment" component={Assignment}/>
+            <Route path="/standards" component={Standards}/>
           </div>
-
         </div>
 
       </HashRouter>

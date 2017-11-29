@@ -1,30 +1,44 @@
 import React from "react";
+import './index.css';
+import './site.css';
 
-class Cat extends React.Component{
+import {Link} from 'react-router-dom';
+
+class CourseAssignments extends React.Component{
   render(){
     return(
-    <div className="cat">
-      <p>I am a cat</p>
-    </div>
+      <div>
+        <button className="btn btn-primary">Create Class</button>
+        <div className="course-container">
+          <div className="course-title">
+            <h2>Create Assignment</h2>
+          </div>
+          <div className="course-assignment-container">
+            <div className="tile course-tile">
+            </div>
+            <div className="tile course-tile">
+            </div>
+            <Link to='/library'>
+              <div className="course-create-assignment">
+                Create Assignment
+                <div className="course-create-plus">+</div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
     );
   }
+
 }
+
 
 class Home extends React.Component {
   render() {
     return (
 
-      <div>
-      <Cat/>
-        <h2>HELLO</h2>
-        <p>Cras facilisis urna ornare ex volutpat, et
-        convallis erat elementum. Ut aliquam, ipsum vitae
-        gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-        metus nec massa. Maecenas hendrerit laoreet augue
-        nec molestie. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.</p>
-
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
+      <div >
+      <CourseAssignments/>
       </div>
     );
   }

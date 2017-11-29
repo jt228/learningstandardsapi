@@ -1,6 +1,135 @@
 [
-    {"grade":[1,2],"genre":"analysis","title":"First title","sources":0,"preview":"Great teaser for prompt 1"},
-    {"grade":2,"genre":"narrative","title":"Second title","sources":1,"preview":"Great teaser for prompt 2"},
-    {"grade":3,"genre":"argumentative","title":"Third title","sources":3,"preview":"Great teaser for prompt 3"},
-    {"grade":4,"genre":"informative","title":"Fourth title","sources":4,"preview":"Great teaser for prompt 4"}
+    {
+        "grade":6,
+        "genre":"narrative",
+        "subject": "ELA",
+        "title":"The Curse of the Poison Pretzel",
+        "sources":1,
+        "preview":"Great teaser for prompt 2",
+        "instructions": "words words words",
+        "sourceTitle": "cat",
+        "sourceAuthor": "fiona",
+        "source": " sources"
+    },
+    {
+        "grade":6,
+        "genre":"argumentative",
+        "subject": "ELA",
+        "title":"Is it Art",
+        "sources":3,
+        "preview":"helpful preview",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":6,
+        "genre":"informative",
+        "subject": "ELA",
+        "title":"Child Labor Conditions",
+        "sources":4,
+        "preview":"Great teaser for prompt 4",
+        "instructions": "words words words",
+         "sourceTitle": "dog",
+        "sourceAuthor": "rover",
+        "source": " sources"
+    },
+        {
+        "grade":7,
+        "genre":"analysis",
+        "subject": "ELA",
+        "title":"Man in the Water",
+        "sources":0,
+        "preview":"Great teaser for prompt 1",
+        "instructions": "words words words",
+         "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":7,
+        "genre":"narrative",
+        "subject": "ELA",
+        "title":"A Story about Patience",
+        "sources":1,
+        "preview":"Great teaser for prompt 2",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":7,
+        "genre":"argumentative",
+        "subject": "ELA",
+        "title":"Screen Time",
+        "sources":3,
+        "preview":"preview",
+        "instructions": "words words words",
+         "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":7,
+        "genre":"informative",
+        "subject": "ELA",
+        "title":"The Open Boat",
+        "sources":4,
+        "preview":"Great teaser for prompt 4",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+        {
+        "grade":8,
+        "genre":"analysis",
+        "subject": "ELA",
+        "title":"America Singing",
+        "sources":0,
+        "preview":"Great teaser for prompt 1",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":8,
+        "genre":"narrative",
+        "subject": "ELA",
+        "title":"Choose Your Own Adventure",
+        "sources":1,
+        "preview":"Great teaser for prompt 2",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":8,
+        "genre":"argumentative",
+        "subject": "ELA",
+        "title":"Samurai vs. Knight",
+        "sources":3,
+        "preview":"Great Teaser for this prompt",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    },
+    {
+        "grade":8,
+        "genre":"informative",
+        "subject": "ELA",
+        "title":"The Open Window",
+        "sources":4,
+        "preview":"Great teaser for prompt 4",
+        "instructions": "words words words",
+        "sourceTitle": "",
+        "sourceAuthor": "",
+        "source": " sources"
+    }
+
 ]
