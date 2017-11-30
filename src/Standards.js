@@ -19,7 +19,7 @@ function JurisdictionList(props){
   return(
       myStandards.map((standard)=>
         <div key="standard" className="assignment-div">
-          <h4>{props.juris}</h4>
+
          <StandardItem standard={standard} />
         </div>
         )
@@ -64,6 +64,7 @@ class StandardsList extends React.Component{
 
     const jurisdiction =jurisdictions.map((k) =>
         <div key={k}>
+          <h4 className="heading">{k}</h4>
           <JurisdictionList juris={k} grade={this.props.assignmentDummy.grade} standards={standards} genre={this.props.assignmentDummy.genre}/>
         </div>
       );

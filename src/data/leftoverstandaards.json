@@ -1,6 +1,6 @@
 
                         {
-                            "analysis": false,
+                            "analysis": true,
                             "argumentative": false,
                             "historical analysis": false,
                             "informative": true,
@@ -10,7 +10,7 @@
                         },
                         {
                             "analysis": false,
-                            "argumentative": false,
+                            "argumentative": true,
                             "historical analysis": false,
                             "informative": true,
                             "narrative": false,
@@ -19,7 +19,7 @@
                         },
                         {
                             "analysis": false,
-                            "argumentative": false,
+                            "argumentative": true,
                             "historical analysis": false,
                             "informative": true,
                             "narrative": false,
@@ -29,7 +29,7 @@
                         {
                             "analysis": false,
                             "argumentative": false,
-                            "historical analysis": false,
+                            "historical analysis": true,
                             "informative": true,
                             "narrative": false,
                             "name": "CCSS.ELA-LITERACY.W.6.2.D",
@@ -38,15 +38,15 @@
                         {
                             "analysis": false,
                             "argumentative": false,
-                            "historical analysis": false,
+                            "historical analysis": true,
                             "informative": true,
-                            "narrative": false,
+                            "narrative": true,
                             "name": "CCSS.ELA-LITERACY.W.6.2.E",
                             "descipton": "Establish and maintain a formal style.",
                         },
                         {
                             "analysis": false,
-                            "argumentative": false,
+                            "argumentative": true,
                             "historical analysis": false,
                             "informative": true,
                             "narrative": false,
@@ -55,7 +55,7 @@
                         },
                         {
                             "analysis": false,
-                            "argumentative": false,
+                            "argumentative": true,
                             "historical analysis": false,
                             "informative": true,
                             "narrative": false,
@@ -63,7 +63,7 @@
                             "descipton": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
                         },
                         {
-                            "analysis": false,
+                            "analysis": true,
                             "argumentative": false,
                             "historical analysis": false,
                             "informative": true,
@@ -74,7 +74,7 @@
                         {
                             "analysis": false,
                             "argumentative": false,
-                            "historical analysis": false,
+                            "historical analysis": true,
                             "informative": true,
                             "narrative": false,
                             "name": "CCSS.ELA-LITERACY.W.6.10",
