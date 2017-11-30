@@ -18,7 +18,8 @@ function JurisdictionList(props){
   }
   return(
       myStandards.map((standard)=>
-        <div key="standard">
+        <div key="standard" className="assignment-div">
+          <h4>{props.juris}</h4>
          <StandardItem standard={standard} />
         </div>
         )
@@ -29,8 +30,8 @@ function JurisdictionList(props){
  function StandardItem(props){
      return(
        <div>
-         <div>{props.standard.name}</div>
-         <div>{props.standard.description}</div>
+         <div className="standard-title">{props.standard.name}</div>
+         <div className="standard-text">{props.standard.description}</div>
        </div>
      );
  }
@@ -91,10 +92,14 @@ class Standards extends React.Component {
   render() {
     return (
       <div>
-        <h2>these are the standards</h2> <Link to='/assignment'>Back</Link>
-        <p>The easiest thing to do is post on
-        our <a href="http://forum.kirupa.com">forums</a>.
-        </p>
+        <div>
+          <span >
+            <h2>Learning Standards</h2>
+          </span>
+          <span >
+            <Link to='/assignment'>Back</Link>
+          </span>
+        </div>
         <StandardsList assignmentDummy={this.state.assignmentDummy} />
       </div>
     );

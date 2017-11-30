@@ -1,14 +1,24 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-
+import ToggleDisplay from 'react-toggle-display';
 import criteria from './data/criteria.json';
 
 
 
+
 function StandardButton(props){
-    return (
-      <div onClick={() => props.onClick(props.value)}>{props.value}</div>
-    );
+    if (props.status) {
+      return (
+      <div className="standard-button-selected"
+        onClick={() => props.onClick(props.value)}>{props.value}</div>
+      );
+    } else {
+      return (
+        <div className="standard-button"
+          onClick={() => props.onClick(props.value)}>{props.value}</div>
+      );
+    }
+
 }
 
 
@@ -48,24 +58,34 @@ class LibraryHeader extends React.Component{
 class ArrayList extends React.Component{
 
   renderStandardButton(arrayValue, index){
+    const status = this.props.selectedStandards[arrayValue];
     return(
       <StandardButton
         onClick={(arrayValue) => this.props.changeButton(arrayValue)}
         value={arrayValue}
-        key={index} />
+        status={status}
+        key={index}  />
     )
   }
+
 
    render(){
     const arrayStandards = Object.keys(this.props.selectedStandards);
 
     const arrayItems = arrayStandards.map((arrayValue, index) =>
-        <div key={"div-"+arrayValue.toString()}>
+        <div key={"div-"+arrayValue.toString()} className="standard-display">
           {this.renderStandardButton(arrayValue, index)}
         </div>
       );
       return(
-        <div> {arrayItems} </div>
+        <div className="col-md-12">
+           <h2>Welcome to the Revision Assistant Library!</h2>
+           <p className="library-welcome"> Choose which learning stanards apply to you and your students.</p>
+          {arrayItems}
+          <div className="submit-btn">
+            <button className="btn button-modal" onClick={()=>this.props.onClick()}>Save and Continue</button>
+          </div>
+        </div>
       );
     }
 }
@@ -100,20 +120,30 @@ class Overlay extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      display: false,
+      show: true,
     };
   }
+
+  hideModal(){
+    this.setState({
+    show: !this.state.show
+  });
+
+  }
+
   render(){
     //console.log(this.state.selectedStandards);
     //let standardsOptions = Object.keys(this.state.selectedStandards);
 
     return(
-      <div className="overlay">
-        <ArrayList
-          selectedStandards={this.props.selectedStandards}
-          changeButton={(value) => this.props.changeButton(value)} />
-        <button onClick={()=> alert('Do something!')}>Save and View Library</button>
-      </div>
+      <ToggleDisplay show={this.state.show}>
+        <div className="overlay">
+          <ArrayList
+            selectedStandards={this.props.selectedStandards}
+            changeButton={(value) => this.props.changeButton(value)} onClick={()=>this.hideModal()}/>
+
+        </div>
+      </ToggleDisplay>
       );
     }
   }
@@ -152,14 +182,13 @@ class Library extends React.Component {
     this.setState({selectedStandards: standardsClicked});
     // Update state in localStorage
     localStorage.setItem('selectedStandards', JSON.stringify(standardsClicked));
-    //console.log(localStorage.selectedStandards)
-    //console.log(this.state.selectedStandards);
+    // console.log(localStorage.selectedStandards)
+    // console.log(this.state.selectedStandards);
     //alert(standardsClicked[value])
   }
   handleClick(i){
     localStorage.setItem('currentAssignment',i);
-    //console.log(localStorage.getItem('currentAssignment'));
-    //alert("hi");
+    console.log(localStorage.getItem('currentAssignment'));
   }
 
   render() {

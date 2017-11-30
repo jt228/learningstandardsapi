@@ -20,10 +20,13 @@ class Main extends React.Component {
           <nav className="navbar-fixed-top">
             <div></div>
             <ul className="header ">
-              <li><NavLink exact to="/">Home</NavLink></li>
-              <li><NavLink to="/library">Library</NavLink></li>
-              <li><NavLink to="/assignment">Assignment</NavLink></li>
-              <li><NavLink to="/standards">Standards</NavLink></li>
+              <li><NavLink exact to="/">
+                <span className="glyphicon glyphicon-home"></span>
+              </NavLink></li>
+              <li><NavLink to="/library">
+                <span className="glyphicon glyphicon-book"></span>
+              </NavLink></li>
+
             </ul>
           </nav>
 

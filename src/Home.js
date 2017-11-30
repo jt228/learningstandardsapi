@@ -11,12 +11,11 @@ class CourseAssignments extends React.Component{
         <button className="btn btn-primary">Create Class</button>
         <div className="course-container">
           <div className="course-title">
-            <h2>Create Assignment</h2>
+            <h2>My first revision</h2>
           </div>
           <div className="course-assignment-container">
             <div className="tile course-tile">
-            </div>
-            <div className="tile course-tile">
+              <h4>title</h4>
             </div>
             <Link to='/library'>
               <div className="course-create-assignment">
